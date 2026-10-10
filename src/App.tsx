@@ -13,7 +13,6 @@ export const App = () => {
   useEffect(() => {
     getTodos().then(data => {
       dispatch(setTodos(data));
-      // dispatch(setLoading(false));
       setIsLoading(false);
     });
   }, [dispatch]);

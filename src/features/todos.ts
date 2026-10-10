@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Todo } from '../types/Todo';
 import { User } from '../types/User';

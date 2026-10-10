@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Todo } from '../types/Todo';
 type CurrentState = {
@@ -12,9 +13,6 @@ export const currentTodoSlice = createSlice({
   name: 'currentTodo',
   initialState,
   reducers: {
-    // setCurrentTodos: (state, action) => {
-    //   state.current = action.payload;
-    // },
     setCurrentTodos: (state, action: PayloadAction<Todo | null>) => {
       state.selectedTodo = action.payload;
     },
